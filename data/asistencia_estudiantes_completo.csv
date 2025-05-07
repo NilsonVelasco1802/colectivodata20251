@@ -494,8 +494,8 @@ id_estudiante,id_grupo,fecha,estado,estrato,medio_transporte
 42,11,2025-03-18,justificado,4,bicicleta
 760,49,2025-03-22,justificado,5,carro
 21,18,2025-04-06,justificado,2,carro
-593,26,2025-03-28,asistio,6,metro
-880,3,2025-03-29,asistio,2,carro
+593,26,2025-06-28,asistio,6,metro
+880,3,2025-06-29,asistio,2,carro
 314,28,2025-03-31,justificado,1,moto
-573,18,2025-03-26,asistio,4,a pie
-104,39,2025-03-11,justificado,1,bus
+573,18,2025-06-26,asistio,4,a pie
+104,39,2025-06-11,justificado,1,bus
