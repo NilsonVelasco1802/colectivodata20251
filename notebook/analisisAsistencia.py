@@ -139,7 +139,7 @@ estratoMinimoPorAsistencia=dataFrameAsistencia.groupby("estado")["estrato"].min(
 
 #10.Conteo de asistencias por grupo y por estado
 conteoAsistenciasPorGrupoEstado =dataFrameAsistencia.groupby(["id_grupo", "estado"]).size().reset_index(name="cantidad")
-print(conteoAsistenciasPorGrupoEstado)
+#print(conteoAsistenciasPorGrupoEstado)
 
 #11. Transporte usado por cada grupo
 trasporteUsadoPorGrupo=dataFrameAsistencia.groupby(["id_grupo","medio_transporte"]).size().reset_index(name="cantidad_personas")

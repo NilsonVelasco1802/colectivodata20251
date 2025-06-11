@@ -118,7 +118,7 @@ primerRegistro=dataFrameUsuarios.sort_values("id").groupby("tipo_usuario").first
 
 #8. ultimo registro por tipo
 ultimoRegistro=dataFrameUsuarios.sort_values("id", ascending=False).groupby("tipo_usuario").first()
-#print(ultimoRegistro)
+print(ultimoRegistro)
 
 #9. combinacion tipo por especialidad
 combinacionTipoEspecialidad=dataFrameUsuarios.groupby(["tipo_usuario", "especialidad"]).size().reset_index(name="conteo")
@@ -153,7 +153,7 @@ dataFrameUsuarios["anio"] = dataFrameUsuarios["fecha_nacimiento"].dt.year
 anioNacimientoMasFrecuente = dataFrameUsuarios.groupby("especialidad")["anio"].agg(
     lambda x: x.mode().iloc[0] if not x.mode().empty else None
 )
-print(anioNacimientoMasFrecuente)
+#print(anioNacimientoMasFrecuente)
 
 #14. mes de nacimiento mas frecuente por tipo
 mesNacimientoFrecuente = (
